@@ -1,0 +1,117 @@
+.aside {
+  max-width: 39.2rem;
+  padding-left: 5.6rem;
+  padding-top: 3.2rem;
+  height: fit-content;
+  background-color: #fff;
+  &__recommend {
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 4rem;
+    &-text {
+      margin-bottom: 3.2rem;
+      letter-spacing: 0.077em;
+      color: $c-dark;
+      line-height: 18px;
+      text-transform: uppercase;
+      font-weight: $regular;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 0.8rem;
+    }
+    &-link {
+      margin: 0;
+    }
+  }
+  &__follow {
+    padding-top: 4rem;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+    padding-bottom: 4rem;
+    &-heading {
+      letter-spacing: 0.077em;
+      line-height: 1.8rem;
+      color: $c-dark;
+      font-size: $fz-ss;
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+    }
+    &-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-gap: 0 1.6rem;
+      align-items: flex-start;
+      margin-bottom: 1.6rem;
+    }
+    &-media {
+      width: 4.8rem;
+      height: 4.8rem;
+      overflow: hidden;
+    }
+    &-link {
+      font-weight: $bold;
+      color: $c-darker;
+      font-size: $fz-md;
+      line-height: 2rem;
+      margin-bottom: 0.4rem;
+    }
+    &-desc {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+      font-size: $fz-ss;
+      line-height: 2rem;
+      font-weight: $regular;
+      color: $c-dark;
+    }
+    &-btn {
+      align-self: center;
+      border: 1px solid $c-dark;
+      padding: 4px 12px 6px;
+      color: $c-darker;
+      transition: border-color ease-in 150ms;
+      font-size: $fz-sm;
+      font-weight: $regular;
+      &:hover {
+        border-color: $c-darker;
+      }
+    }
+  }
+  &__bookmarked {
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+    padding: 4rem 0;
+    &-heading {
+      margin-bottom: 0.8rem;
+      font-size: $fz-md;
+      color: $c-darker;
+      font-weight: $medium;
+      line-height: 2rem;
+      & i {
+        margin-left: 0.8rem;
+      }
+    }
+    &-message {
+      font-size: $fz-sm;
+      color: $c-dark;
+      line-height: 2rem;
+    }
+  }
+  &__footer {
+    padding: 2.4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+    &-link {
+      margin-right: 2.6rem;
+      margin-bottom: 0.8rem;
+      color: $c-dark;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.header {
+  height: 6.5rem;
+  box-shadow: 0px 4px 12px 0px rgba(145, 142, 142, 0.137);
+  position: relative;
+  z-index: 999;
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    &-svg {
+      width: 16.2rem;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 1.7rem;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    color: $c-dark;
+    &-icon {
+      font-size: $fz-md;
+      cursor: pointer;
+    }
+    &-input {
+      font-family: "Noto Sans JP", serif;
+      border: 0;
+      outline: none;
+      padding: 1px 2px;
+      margin-left: 1rem;
+      margin-right: 2.8rem;
+      max-width: 18.2rem;
+      display: none;
+    }
+  }
+  &__bookmark-btn,
+  &__message-btn {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: $fz-md;
+    color: $c-dark;
+    cursor: pointer;
+  }
+  &__upgrade-btn {
+    padding: 4px 1.2rem 6px;
+    font-size: $fz-sm;
+    line-height: 2rem;
+    border: 1px solid $c-dark;
+    background-color: #fff;
+    color: $c-darker;
+    transition: border-color ease-in 150ms;
+    &:hover {
+      border-color: $c-darker;
+    }
+  }
+  &__user {
+    &-media {
+      cursor: pointer;
+    }
+    &-image {
+      width: 3.2rem;
+      height: 3.2rem;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+}
