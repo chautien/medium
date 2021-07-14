@@ -1,4 +1,6 @@
 .content {
+  width: 100%;
+  max-width: 80rem;
   border-right: 1px solid rgba(230, 230, 230, 1);
   padding-right: 5.6rem;
   &__category {
@@ -163,6 +165,11 @@
     &-bookmark,
     &-action {
       cursor: pointer;
+    }
+    &-thumbnail {
+      display: block;
+      width: 100%;
+      max-width: 20rem;
     }
   }
 }

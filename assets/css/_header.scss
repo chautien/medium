@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     color: $c-dark;
+    position: relative;
     &-icon {
       font-size: $fz-md;
       cursor: pointer;
@@ -36,7 +37,27 @@
       margin-left: 1rem;
       margin-right: 2.8rem;
       max-width: 18.2rem;
+      border: 1px solid #e6e6e6;
+      padding: 10px;
+      border-radius: 4px;
       display: none;
+    }
+    &-input:focus + &-label,
+    &-input:not(:placeholder-shown) + &-label {
+      top: 0;
+      padding: 0 4px;
+      left: 12.8%;
+      background-color: #fff;
+    }
+    &-label {
+      display: none;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 14%;
+      top: 50%;
+      transition: all 200ms ease-in;
+      background-color: transparent;
+      pointer-events: none;
     }
   }
   &__bookmark-btn,
