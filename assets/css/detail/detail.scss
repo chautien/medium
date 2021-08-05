@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;700;800;900&display=swap');
+
+.post {
+  padding-top: 40px;
+  max-width: 740px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__heading {
+    margin-bottom: 2.4rem;
+    font-family: 'Inter', sans-serif;
+
+    &-title {
+      font-size: 46px;
+      line-height: 56px;
+      font-weight: 800;
+      letter-spacing: -0.306px;
+      color: #3c3e3e;
+      margin-bottom: 32px;
+    }
+
+    &-about {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-author {
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+
+      &-img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      &-link {
+        display: inline;
+        font-size: 14px;
+        color: #3c3e3e;
+      }
+    }
+
+    &-time {
+      color: #6d6e6e;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-dot {
+      font-size: 2px;
+    }
+
+    &-action {
+      margin-left: auto;
+      font-size: 20px;
+      display: inline-flex;
+      gap: 18px;
+
+      &-link {
+        color: rgba(60, 62, 62, 1);
+      }
+    }
+  }
+
+  &__content {
+    font-family: 'IBM Plex Serif', serif;
+    letter-spacing: -0.003em;
+
+    & p {
+      line-height: 32px;
+      font-size: 2.1rem;
+      margin-top: 4rem;
+
+    }
+
+    & figure {
+      margin-top: 5.6rem;
+      text-align: center;
+
+    }
+
+    & img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    & figcaption {
+      font-family: 'Inter', sans-serif;
+      margin-top: 1rem;
+      line-height: 20px;
+      color: rgba(109, 110, 110, 1);
+    }
+
+    & h2 {
+      line-height: 28px;
+      margin-top: 1.72em;
+      font-size: 2.2rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      color: #000;
+      letter-spacing: -0.5;
+
+      & strong {
+        font-weight: 600;
+
+      }
+    }
+
+    & ul {
+      margin-top: 2rem;
+      font-size: 2.1rem;
+      list-style-type: disc;
+      letter-spacing: -0.001em;
+
+      & li {
+        margin-left: 40px;
+        margin-top: 1em;
+      }
+    }
+
+    & strong {
+      font-weight: 700;
+    }
+
+    & h2+p {
+      margin-top: 2rem;
+    }
+  }
+}
