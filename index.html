@@ -23,6 +23,7 @@
     <!-- <script
       src="https://kit.fontawesome.com/d47d3d2873.js"
       crossorigin="anonymous"
+      rel="preconnect"
     ></script> -->
     <title>Medium Clone</title>
     <link rel="stylesheet" href="./assets/css/style.min.css" />
@@ -59,7 +60,7 @@
           </div>
           <div class="header__upgrade">
             <a href="#" class="btn-flex btn-rounded-5 header__upgrade-btn">
-              Upgrade
+              Nâng cấp
             </a>
           </div>
           <div class="header__user">
@@ -78,7 +79,7 @@
       <section class="container main__container">
         <section class="content">
           <section class="content__category">
-            <span class="content__category-title"> YOUR TOPICS </span>
+            <span class="content__category-title"> CHỦ ĐỀ CỦA BẠN </span>
             <nav class="content__category-action">
               <a href="#" class="btn-rounded-5 content__category-item"
                 >Javascript</a
@@ -95,8 +96,13 @@
               <a href="#" class="content__category-link">All</a>
             </nav>
           </section>
-          <section class="content__post">
-            <article class="content__post-item">
+          <section class="content__post" id="contentPost">
+            <span
+              id="loading"
+              style="display: block; text-align: center; font-size: 18px"
+              >Loading <i class="fas fa-spinner fa-spin"></i
+            ></span>
+            <!-- <article class="content__post-item">
               <section class="post__item-box">
                 <div class="post__item-about">
                   <div class="post__item-info">
@@ -358,8 +364,8 @@
                   class="post__item-thumbnail-image"
                 />
               </a>
-            </article>
-            <article class="content__post-item">
+            </article> -->
+            <!-- <article class="content__post-item">
               <section class="post__item-box">
                 <div class="post__item-about">
                   <div class="post__item-info">
@@ -490,8 +496,8 @@
                   class="post__item-thumbnail-image"
                 />
               </a>
-            </article>
-            <article class="content__post-item">
+            </article> -->
+            <!-- <article class="content__post-item">
               <section class="post__item-box">
                 <div class="post__item-about">
                   <div class="post__item-info">
@@ -751,12 +757,12 @@
                   class="post__item-thumbnail-image"
                 />
               </a>
-            </article>
+            </article> -->
           </section>
         </section>
         <aside class="aside" id="aside">
           <section class="aside__recommend">
-            <h4 class="aside__recommend-text">RECOMMENDED TOPICS</h4>
+            <h4 class="aside__recommend-text">CHỦ ĐỀ GỢI Ý</h4>
             <ul class="aside__recommend-list">
               <li class="aside__recommend-item">
                 <a
@@ -766,7 +772,7 @@
                     content__category-item
                     aside__recommend-link
                   "
-                  >Technology</a
+                  >Công nghệ</a
                 >
               </li>
               <li class="aside__recommend-item">
@@ -777,7 +783,7 @@
                     content__category-item
                     aside__recommend-link
                   "
-                  >Money</a
+                  >Tài chính</a
                 >
               </li>
               <li class="aside__recommend-item">
@@ -788,7 +794,7 @@
                     content__category-item
                     aside__recommend-link
                   "
-                  >Bussiness</a
+                  >Kinh doanh</a
                 >
               </li>
               <li class="aside__recommend-item">
@@ -799,7 +805,7 @@
                     content__category-item
                     aside__recommend-link
                   "
-                  >Productivity</a
+                  >Sản xuất</a
                 >
               </li>
               <li class="aside__recommend-item">
@@ -810,7 +816,7 @@
                     content__category-item
                     aside__recommend-link
                   "
-                  >Psychology</a
+                  >Tâm lý</a
                 >
               </li>
               <li class="aside__recommend-item">
@@ -832,13 +838,13 @@
                     content__category-item
                     aside__recommend-link
                   "
-                  >Art</a
+                  >Nghệ thuật</a
                 >
               </li>
             </ul>
           </section>
           <section class="aside__follow">
-            <h4 class="aside__follow-heading">Who to follow</h4>
+            <h4 class="aside__follow-heading">Gợi ý theo dõi</h4>
             <ul class="aside__follow-list">
               <li class="aside__follow-item">
                 <a href="#" class="btn-rounded-5 aside__follow-media">
@@ -858,8 +864,8 @@
                     https://twitter.com/doctorow
                   </p>
                 </div>
-                <a href="#" class="btn-flex btn-rounded-5 aside__follow-btn">
-                  Follow
+                <a href="#" class="btn-flex btn-rounded-5 aside__follow-btn"
+                  >Theo dõi
                 </a>
               </li>
               <li class="aside__follow-item">
@@ -879,7 +885,7 @@
                   </p>
                 </div>
                 <a href="#" class="btn-flex btn-rounded-5 aside__follow-btn">
-                  Follow
+                  Theo dõi
                 </a>
               </li>
               <li class="aside__follow-item">
@@ -901,26 +907,25 @@
                   </p>
                 </div>
                 <a href="#" class="btn-flex btn-rounded-5 aside__follow-btn">
-                  Follow
+                  Theo dõi
                 </a>
               </li>
             </ul>
           </section>
           <section class="aside__bookmarked">
             <h4 class="aside__bookmarked-heading">
-              Bookmark stories for later <i class="fal fa-bookmark"></i>
+              Bài viết xem sau <i class="fal fa-bookmark"></i>
             </h4>
-            <small class="aside__bookmarked-message"
-              >Start saving stories by clicking the bookmark icon and you’ll
-              find them all here.</small
-            >
+            <small class="aside__bookmarked-message">
+              Bắt đầu lưu các bài xem sau bằng các kích vào nút bookmark.
+            </small>
           </section>
           <footer class="aside__footer">
-            <a href="#" class="aside__footer-link">Help</a>
-            <a href="#" class="aside__footer-link">Status</a>
-            <a href="#" class="aside__footer-link">Writers</a>
+            <a href="#" class="aside__footer-link">Hỗ trợ</a>
+            <a href="#" class="aside__footer-link">Trạng thái</a>
+            <a href="#" class="aside__footer-link">Người viết</a>
             <a href="#" class="aside__footer-link">Blog</a>
-            <a href="#" class="aside__footer-link">Careers</a>
+            <a href="#" class="aside__footer-link">Tuyền dụng</a>
             <a href="#" class="aside__footer-link">Privacy</a>
             <a href="#" class="aside__footer-link">Terms</a>
             <a href="#" class="aside__footer-link">About</a>
@@ -937,6 +942,8 @@
       <i class="fal fa-arrow-alt-to-top"></i>
     </a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/home.js"></script>
   </body>
 </html>

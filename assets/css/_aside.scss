@@ -3,11 +3,13 @@
   padding-top: 3.2rem;
   height: fit-content;
   background-color: #fff;
+
   &__recommend {
     border-bottom: 1px solid rgba(230, 230, 230, 1);
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 4rem;
+
     &-text {
       margin-bottom: 3.2rem;
       letter-spacing: 0.077em;
@@ -16,20 +18,24 @@
       text-transform: uppercase;
       font-weight: $regular;
     }
+
     &-list {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem 0.8rem;
     }
+
     &-link {
       margin: 0;
     }
   }
+
   &__follow {
     padding-top: 4rem;
     border-bottom: 1px solid rgba(230, 230, 230, 1);
 
     padding-bottom: 4rem;
+
     &-heading {
       letter-spacing: 0.077em;
       line-height: 1.8rem;
@@ -38,18 +44,21 @@
       text-transform: uppercase;
       margin-bottom: 1.6rem;
     }
+
     &-item {
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr 8.5rem;
       grid-gap: 0 1.6rem;
       align-items: flex-start;
       margin-bottom: 1.6rem;
     }
+
     &-media {
       width: 4.8rem;
       height: 4.8rem;
       overflow: hidden;
     }
+
     &-link {
       font-weight: $bold;
       color: $c-darker;
@@ -57,6 +66,7 @@
       line-height: 2rem;
       margin-bottom: 0.4rem;
     }
+
     &-desc {
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -67,7 +77,12 @@
       line-height: 2rem;
       font-weight: $regular;
       color: $c-dark;
+      word-break: break-all;
+      hyphens: auto;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
     }
+
     &-btn {
       align-self: center;
       border: 1px solid $c-dark;
@@ -76,31 +91,37 @@
       transition: border-color ease-in 150ms;
       font-size: $fz-sm;
       font-weight: $regular;
+
       &:hover {
         border-color: $c-darker;
       }
     }
   }
+
   &__bookmarked {
     border-bottom: 1px solid rgba(230, 230, 230, 1);
 
     padding: 4rem 0;
+
     &-heading {
       margin-bottom: 0.8rem;
       font-size: $fz-md;
       color: $c-darker;
       font-weight: $medium;
       line-height: 2rem;
+
       & i {
         margin-left: 0.8rem;
       }
     }
+
     &-message {
       font-size: $fz-sm;
       color: $c-dark;
       line-height: 2rem;
     }
   }
+
   &__footer {
     padding: 2.4rem 0;
     display: flex;
