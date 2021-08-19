@@ -27,6 +27,15 @@
     <title>Medium Clone</title>
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <link rel="stylesheet" href="./assets/css/detail/detail.css" />
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=569998374016422&autoLogAppEvents=1"
+      nonce="dwdVReqs"
+    ></script>
   </head>
   <body id="scrollToTop">
     <header class="header">
@@ -76,8 +85,15 @@
       </section>
     </header>
     <main class="main">
-      <section class="container main__container">
-        <section class="post" id="post"></section>
+      <section class="container main__container" style="flex-direction: column">
+        <section style="min-height: 100vh" class="post" id="post"></section>
+        <div
+          class="fb-comments"
+          data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+          data-width="740"
+          data-numposts="5"
+          style="margin: 0 auto 20px"
+        ></div>
       </section>
       <aside class="aside-fixed"></aside>
     </main>

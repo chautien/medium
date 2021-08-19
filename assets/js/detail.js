@@ -33,7 +33,7 @@
               />
             </a>
             <a href="#" class="post__heading-author-link">
-              Eliran Elnasi
+            Châu Tiến
             </a>
           </div>
           <time class="post__heading-time"
